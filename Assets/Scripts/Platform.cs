@@ -17,7 +17,7 @@ public class Platform : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (rb.velocity.magnitude > speed)
             rb.velocity = rb.velocity.normalized * speed;
         Vector3 dir = waypoints[target] - transform.position;

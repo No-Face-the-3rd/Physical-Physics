@@ -13,7 +13,7 @@ public class OnClick : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 	    if(Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
